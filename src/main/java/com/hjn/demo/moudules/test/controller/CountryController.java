@@ -6,11 +6,7 @@ import com.hjn.demo.moudules.test.sevice.CountryServcie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @Description CountryController
- * @Author HymanHu
- * @Date 2020/8/11 14:01
- */
+
 @RestController
 @RequestMapping("/api")
 public class CountryController {

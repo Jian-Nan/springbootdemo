@@ -8,11 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.stereotype.Service;
 
-/**
- * @Description CountryServcieImpl
- * @Author HymanHu
- * @Date 2020/8/11 13:59
- */
+
 @Service
 public class CountryServcieImpl implements CountryServcie {
 

@@ -7,11 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * @Description CityDao
- * @Author HymanHu
- * @Date 2020/8/11 14:08
- */
+
 @Repository
 @Mapper
 public interface CityDao {
