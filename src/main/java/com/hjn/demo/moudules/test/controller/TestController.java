@@ -1,33 +1,30 @@
 package com.hjn.demo.moudules.test.controller;
 
-import org.apache.juli.logging.LogFactory;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * @Description TestController
+ * @Author HymanHu
+ * @Date 2020/8/10 10:39
+ */
 @Controller
 @RequestMapping("/test")
 public class TestController {
 
-    private final static Logger LOGGER= LoggerFactory.getLogger(TestController.class);
-
-    @RequestMapping("/logerTest")
+    /**
+     * 127.0.0.1:8080/test/testDesc ---- get
+     */
+    @GetMapping("/testDesc")
     @ResponseBody
-    public String loggerTest()
-    {
-        LOGGER.trace("trace");
-        LOGGER.debug("debug");
-        LOGGER.warn("warn");
-        return "logger test";
+    public String testDesc() {
+        return "This is test module desc.";
     }
-
-    @RequestMapping("/testDesc")
-    @ResponseBody
-    public String testDesc()
-    {
-        return "ttt";
-    }
-
 }
